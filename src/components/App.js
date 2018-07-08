@@ -1,12 +1,10 @@
 import React, { Component } from "react";
+import store from '../store/store';
 import HelloWorld from "./HelloWorld";
 
 class App extends Component {
-  state = {
-    tech: "React"
-  };
   render() {
-    return <HelloWorld tech={this.state.tech} />;
+    return <HelloWorld tech={store.getState().tech} />;
   }
 }
 
