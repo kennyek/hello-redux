@@ -1,4 +1,5 @@
 # Hello Redux
 
-My first step in learning Redux, by refactoring a simple React app as per the
-[walkthrought instructions](https://github.com/ohansemmanuel/hello-redux).
+My first step in learning Redux, by following along through the code examples in
+[Understanding Redux 1](https://github.com/ohansemmanuel/hello-redux) by Ohans
+Emmanuel.

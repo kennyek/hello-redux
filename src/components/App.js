@@ -1,11 +1,13 @@
-import React, { Component } from "react";
-import store from '../store/store';
+import React from "react";
+import store from '../store';
+import ButtonGroup from "./ButtonGroup";
 import HelloWorld from "./HelloWorld";
 
-class App extends Component {
-  render() {
-    return <HelloWorld tech={store.getState().tech} />;
-  }
-}
+const App = props => (
+  <React.Fragment>
+    <HelloWorld technology={store.getState().technology} />
+    <ButtonGroup technologies={["React", "Elm", "React-redux"]} />
+  </React.Fragment>
+);
 
 export default App;
